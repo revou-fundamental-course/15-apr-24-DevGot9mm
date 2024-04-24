@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
-    
+    <script src="js/script.js"></script>
+    <header>
+        <h1 class="head1">Temperature Converter by Devin Owen Sanusi</h1>
+    </header>
+
+<section class="sec-intro">
+    <section>
+    <p class="text1">Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk
+        mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
+    </p>
+</section>
+
+<section id="section1" class="section1">
+    <header>
+        <h3>Celcius(&deg;C):</h3>
+    </header>
+
+<article>
+    <textarea id="celcius" placeholder="Masukkan nilai Celcius..." class="area1" name=""  cols="15" rows="1"></textarea>
+</article>
+</section>
+
+<div>
+    <button onclick="ctf()" id="ctf" class="con1">Convert</button>
+    <button onclick="ftc()" id="ftc" class="con2">Convert</button>
+    <button class="res" onclick="resett()" id="res">Reset</button>
+    <button class="ress" onclick="resettt()" id="ress" >Reset</button>
+    <button class="rev" id="rev" onclick="swap()">Reverse</button>
+</div>
+
+
+<section id="section2" class="section2">
+    <header>
+        <h3>Fahrenheit(&deg;F):</h3>
+    </header>
+
+<article>
+    <textarea readonly placeholder="Nilai Fahrenheit..." class="area2" name="" id="fahrenheit" cols="15" rows="1"></textarea>
+</article>
+
+</section>
+
+<section class="sec-result">
+    <header>
+        <h3>Cara Kalkulasi:</h3>
+    </header>
+
+<article>
+    <textarea placeholder="Cara Kalkulasi akan ditampilkan disini..." class="area3" name="" id="formula" cols="15" rows="1"></textarea>
+</article>
+</section>
+
+<section class="sec-exp">
+    <header>
+        <h3 class="cara1">Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h3>
+    </header>
+<hr>
+        <header> 
+            <p>Suhu S dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat Celcius (&deg;C) kali 9/5 tambah 32</p>
+        </header>
+             <article class="formula1">
+                <h1>
+                    S<sub class="no-italic">(&deg;F)</sub>= (S<sub class="no-italic">(&deg;C)</sub> 
+                    <p class="no-italic-inline">x 9/5) + 32</p>
+                </h1>
+                <p class="no-italic">atau</p>
+                <h1>
+                    S<sub class="no-italic">(&deg;F)</sub>= (S<sub class="no-italic">(&deg;C)</sub> 
+                    <p class="no-italic-inline">x 1.8) + 32</p>
+                </h1>
+                
+            </article>
+        
+</section>
+</section>
+    <article class="thankyou">
+        Terimakasih RevoU untuk ilmu-ilmu yang sangat bermanfaat 😁
+    </article>
+
+
+
 </body>
 </html>
+
